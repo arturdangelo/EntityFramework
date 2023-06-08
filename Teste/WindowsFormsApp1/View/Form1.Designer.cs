@@ -47,28 +47,28 @@
             this.Txt_Nome.Location = new System.Drawing.Point(59, 72);
             this.Txt_Nome.Name = "Txt_Nome";
             this.Txt_Nome.Size = new System.Drawing.Size(311, 20);
-            this.Txt_Nome.TabIndex = 0;
+            this.Txt_Nome.TabIndex = 2;
             // 
             // Txt_Valor
             // 
             this.Txt_Valor.Location = new System.Drawing.Point(59, 124);
             this.Txt_Valor.Name = "Txt_Valor";
             this.Txt_Valor.Size = new System.Drawing.Size(84, 20);
-            this.Txt_Valor.TabIndex = 1;
+            this.Txt_Valor.TabIndex = 4;
             // 
             // Txt_Categoria
             // 
             this.Txt_Categoria.Location = new System.Drawing.Point(59, 98);
             this.Txt_Categoria.Name = "Txt_Categoria";
             this.Txt_Categoria.Size = new System.Drawing.Size(311, 20);
-            this.Txt_Categoria.TabIndex = 2;
+            this.Txt_Categoria.TabIndex = 3;
             // 
             // Btn_Cadastrar
             // 
             this.Btn_Cadastrar.Location = new System.Drawing.Point(45, 211);
             this.Btn_Cadastrar.Name = "Btn_Cadastrar";
             this.Btn_Cadastrar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Cadastrar.TabIndex = 3;
+            this.Btn_Cadastrar.TabIndex = 5;
             this.Btn_Cadastrar.Text = "Cadastrar";
             this.Btn_Cadastrar.UseVisualStyleBackColor = true;
             this.Btn_Cadastrar.Click += new System.EventHandler(this.Btn_Cadastrar_Click);
@@ -78,7 +78,7 @@
             this.button2.Location = new System.Drawing.Point(140, 211);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Alterar";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -87,25 +87,27 @@
             this.Btn_Deletar.Location = new System.Drawing.Point(140, 260);
             this.Btn_Deletar.Name = "Btn_Deletar";
             this.Btn_Deletar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Deletar.TabIndex = 5;
+            this.Btn_Deletar.TabIndex = 8;
             this.Btn_Deletar.Text = "Deletar";
             this.Btn_Deletar.UseVisualStyleBackColor = true;
+            this.Btn_Deletar.Click += new System.EventHandler(this.Btn_Deletar_Click);
             // 
             // Btn_Exibir
             // 
             this.Btn_Exibir.Location = new System.Drawing.Point(45, 260);
             this.Btn_Exibir.Name = "Btn_Exibir";
             this.Btn_Exibir.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Exibir.TabIndex = 6;
+            this.Btn_Exibir.TabIndex = 7;
             this.Btn_Exibir.Text = "Exibir";
             this.Btn_Exibir.UseVisualStyleBackColor = true;
+            this.Btn_Exibir.Click += new System.EventHandler(this.Btn_Exibir_Click);
             // 
             // Txt_Codigo
             // 
             this.Txt_Codigo.Location = new System.Drawing.Point(59, 46);
             this.Txt_Codigo.Name = "Txt_Codigo";
             this.Txt_Codigo.Size = new System.Drawing.Size(51, 20);
-            this.Txt_Codigo.TabIndex = 7;
+            this.Txt_Codigo.TabIndex = 1;
             // 
             // Lbn_Codigo
             // 
