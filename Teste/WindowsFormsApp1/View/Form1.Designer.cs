@@ -32,7 +32,7 @@
             this.Txt_Valor = new System.Windows.Forms.TextBox();
             this.Txt_Categoria = new System.Windows.Forms.TextBox();
             this.Btn_Cadastrar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Btn_Atualizar = new System.Windows.Forms.Button();
             this.Btn_Deletar = new System.Windows.Forms.Button();
             this.Btn_Exibir = new System.Windows.Forms.Button();
             this.Txt_Codigo = new System.Windows.Forms.TextBox();
@@ -73,14 +73,15 @@
             this.Btn_Cadastrar.UseVisualStyleBackColor = true;
             this.Btn_Cadastrar.Click += new System.EventHandler(this.Btn_Cadastrar_Click);
             // 
-            // button2
+            // Btn_Atualizar
             // 
-            this.button2.Location = new System.Drawing.Point(140, 211);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Alterar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_Atualizar.Location = new System.Drawing.Point(140, 211);
+            this.Btn_Atualizar.Name = "Btn_Atualizar";
+            this.Btn_Atualizar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Atualizar.TabIndex = 6;
+            this.Btn_Atualizar.Text = "Atualizar";
+            this.Btn_Atualizar.UseVisualStyleBackColor = true;
+            this.Btn_Atualizar.Click += new System.EventHandler(this.Btn_Atualizar_Click);
             // 
             // Btn_Deletar
             // 
@@ -157,7 +158,7 @@
             this.Controls.Add(this.Txt_Codigo);
             this.Controls.Add(this.Btn_Exibir);
             this.Controls.Add(this.Btn_Deletar);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Btn_Atualizar);
             this.Controls.Add(this.Btn_Cadastrar);
             this.Controls.Add(this.Txt_Categoria);
             this.Controls.Add(this.Txt_Valor);
@@ -175,7 +176,7 @@
         private System.Windows.Forms.TextBox Txt_Valor;
         private System.Windows.Forms.TextBox Txt_Categoria;
         private System.Windows.Forms.Button Btn_Cadastrar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Btn_Atualizar;
         private System.Windows.Forms.Button Btn_Deletar;
         private System.Windows.Forms.Button Btn_Exibir;
         private System.Windows.Forms.TextBox Txt_Codigo;

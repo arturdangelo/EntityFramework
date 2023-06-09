@@ -73,5 +73,22 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Btn_Atualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int codigo = Convert.ToInt32(Txt_Codigo.Text.ToString());
+                string nome = Txt_Nome.Text;
+                string categoria = Txt_Categoria.Text;
+                double valor = Convert.ToDouble(Txt_Valor.Text.ToString());
+
+                ProdutoController.AtualizarProduto(codigo, nome, categoria, valor);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

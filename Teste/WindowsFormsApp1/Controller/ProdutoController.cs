@@ -26,6 +26,20 @@ namespace WindowsFormsApp1
             }
         }
 
+        public static void AtualizarProduto(int codigo, string nome, string categoria, double valor)
+        {
+            using (var repo = new LojaContextModel())
+            {
+                IList<ProdutoController> produtos = repo.Produtos.ToList();
+                ProdutoController produto = produtos.FirstOrDefault(p => p.Codigo == codigo);
+
+                produto.Nome = nome;
+                produto.Categoria = categoria;
+                produto.Valor = valor;
+                repo.SaveChanges();
+                MessageBox.Show("Produto atualizado com sucesso!");
+            }
+        }
         public static void ExibirTodosProdutos(int codigo)
         {
             using (var repo = new LojaContextModel())
@@ -34,9 +48,18 @@ namespace WindowsFormsApp1
 
                 if (codigo == 0)
                 {
-                    foreach (var produto in produtos)
+                    if (produtos.Count == 0)
                     {
-                        MessageBox.Show(produto.Nome);
+                        MessageBox.Show("Não há nenhum produto cadastrado!");
+                    }
+                    else
+                    {
+                        foreach (var produto in produtos)
+                        {
+                            MessageBox.Show("Código: "+produto.Codigo+"\nNome: "
+                                +produto.Nome+"\nCategoria: "+produto.Categoria+
+                                "\n Valor: R$ "+produto.Valor);
+                        }
                     }
                 }
                 else
@@ -47,12 +70,14 @@ namespace WindowsFormsApp1
                     {
                         foreach (var produto in produtosEncontrados)
                         {
-                            MessageBox.Show(produto.Nome);
+                            MessageBox.Show("Código: " + produto.Codigo + "\nNome: "
+                                + produto.Nome + "\nCategoria: " + produto.Categoria +
+                                "\n Valor: R$ " + produto.Valor);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Nenhum produto encontrado!");
+                        MessageBox.Show("Nenhum produto encontrado com esse código!");
                     }
                 }
             }
@@ -88,7 +113,6 @@ namespace WindowsFormsApp1
                     }
                 }
             }
-
         }
     }
 }
